@@ -1,0 +1,239 @@
+body {
+  background-color: #e7e7e7;
+}
+#dragg {
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+  background-color: aqua;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+li {
+  margin: 5px;
+  padding: 5px;
+  width: 150px;
+}
+
+#draggabl {
+  width: 100px;
+  height: 100px;
+  padding: 0.5em;
+  float: left;
+  margin: 10px 10px 10px 0;
+}
+#droppable {
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+  float: left;
+  margin: 10px;
+}
+#droppable {
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+  float: left;
+  margin: 10px;
+}
+#draggab,
+#draggable-nonvalid {
+  width: 100px;
+  height: 100px;
+  padding: 0.5em;
+  float: left;
+  margin: 10px 10px 10px 0;
+}
+#sortable1,
+#sortable2 {
+  border: 1px solid #eee;
+  width: 142px;
+  min-height: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 0 0 0;
+  float: left;
+  margin-right: 10px;
+}
+#sortable1 li,
+#sortable2 li {
+  margin: 0 5px 5px 5px;
+  padding: 5px;
+  font-size: 1.2em;
+  width: 120px;
+}
+#resizable {
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+}
+#resizable h3 {
+  text-align: center;
+  margin: 0;
+}
+#feedback {
+  font-size: 1.4em;
+}
+#selectable .ui-selecting {
+  background: #feca40;
+}
+#selectable .ui-selected {
+  background: #f39814;
+  color: white;
+}
+#selectable {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 60%;
+}
+#selectable li {
+  margin: 3px;
+  padding: 0.4em;
+  font-size: 1.4em;
+  height: px;
+}
+label {
+  display: inline-block;
+  width: 5em;
+}
+.toggler {
+  width: 500px;
+  height: 200px;
+  position: relative;
+}
+#button1 {
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+#effect1 {
+  padding: 1em;
+  border: 1px solid #000;
+  background: #eee;
+  color: #333;
+}
+.newClass {
+  text-indent: 40px;
+  letter-spacing: 0.4em;
+  width: 410px;
+  height: 120px;
+  padding: 30px;
+  margin: 10px;
+  font-size: 1.1em;
+}
+#button {
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+#effect {
+  width: 240px;
+  height: 200px;
+  padding: 0.4em;
+  position: relative;
+  background: #fff;
+}
+#effect h3 {
+  margin: 0;
+  padding: 0.4em;
+  text-align: center;
+}
+#button {
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+#effect {
+  width: 240px;
+  height: 180px;
+  padding: 0.4em;
+  position: relative;
+  background: #52c9d4;
+}
+#effect h3 {
+  margin: 0;
+  padding: 0.4em;
+  text-align: center;
+}
+#button2 {
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+#effect2 {
+  position: relative;
+  width: 240px;
+  padding: 1em;
+  letter-spacing: 0;
+  font-size: 1.2em;
+  border: 1px solid #000;
+  background: #eee;
+  color: #333;
+}
+.newClass {
+  text-indent: 40px;
+  letter-spacing: 0.4em;
+  width: 410px;
+  height: 100px;
+  padding: 30px;
+  margin: 10px;
+  font-size: 1.6em;
+}
+.ui-menu {
+  width: 150px;
+}
+.ui-progressbar {
+  position: relative;
+}
+.progress-label {
+  position: absolute;
+  left: 50%;
+  top: 4px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #fff;
+}
+fieldset {
+  border: 0;
+  margin-left: 300px;
+}
+label {
+  display: block;
+  margin: 20px 0 0 0;
+}
+
+#circle {
+  float: left;
+  background: yellow;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+#parent {
+  width: 60%;
+  height: 40px;
+  margin: 10px auto;
+  padding: 5px;
+  border: 1px solid #777;
+  background-color: #fbca93;
+  text-align: center;
+}
+.positionable {
+  position: absolute;
+  display: block;
+  right: 0;
+  bottom: 0;
+  background-color: #bcd5e6;
+  text-align: center;
+}
+#positionable1 {
+  width: 75px;
+  height: 75px;
+}
+#positionable2 {
+  width: 120px;
+  height: 40px;
+}
+select, input {
+  margin-left: 15px;
+}

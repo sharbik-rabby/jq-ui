@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jsUI</title>
+    <!-- cdn links start-->
+    <!-- cdn links end-->
+
+    <!-- font-awosom links start -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- font-awosom links end -->
+    <!-- icon links -->
+    <link rel="stylesheet" href="css/bootstrap-icons.css" />
+    <!-- css links -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="dragg" class="ui-widget-content">
+        <p>Drag me around</p>
+      </div>
+      <hr />
+      <ul>
+        <li id="draggable" class="ui-state-highlight">Drag me down</li>
+      </ul>
+
+      <ul id="sortable">
+        <li class="ui-state-default">Item 1</li>
+        <li class="ui-state-default">Item 2</li>
+        <li class="ui-state-default">Item 3</li>
+        <li class="ui-state-default">Item 4</li>
+        <li class="ui-state-default">Item 5</li>
+      </ul>
+      <hr />
+
+      <div id="draggable-nonvalid" class="ui-widget-content">
+        <p>I&apos;m draggable but can&apos;t be dropped</p>
+      </div>
+
+      <div id="draggab" class="ui-widget-content">
+        <p>Drag me to my target</p>
+      </div>
+
+      <div id="droppable" class="ui-widget-header">
+        <p>accept: &apos;#draggable&apos;</p>
+      </div>
+
+      <br /><br /><br /><br /><br /><br /><br />
+      <hr />
+
+      <div id="resizable" class="ui-widget-content">
+        <h3 class="ui-widget-header">Resizable</h3>
+      </div>
+
+      <hr />
+      <ol id="selectable">
+        <li class="ui-widget-content">Item 1</li>
+        <li class="ui-widget-content">Item 2</li>
+        <li class="ui-widget-content">Item 3</li>
+        <li class="ui-widget-content">Item 4</li>
+        <li class="ui-widget-content">Item 5</li>
+        <li class="ui-widget-content">Item 6</li>
+        <li class="ui-widget-content">Item 7</li>
+      </ol>
+      <hr />
+      <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+          <p>
+            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.
+            Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
+            condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi.
+            Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit
+            eu ante scelerisque vulputate.
+          </p>
+        </div>
+
+        <h3>Section 2</h3>
+        <div>
+          <p>
+            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit
+            amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris
+            turpis porttitor velit, faucibus interdum tellus libero ac justo.
+            Vivamus non quam. In suscipit faucibus urna.
+          </p>
+        </div>
+
+        <h3>Section 3</h3>
+        <div>
+          <p>
+            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque
+            lobortis. Phasellus pellentesque purus in massa. Aenean in pede.
+            Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed
+            commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu
+            iaculis leo purus venenatis dui.
+          </p>
+          <ul>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+          </ul>
+        </div>
+
+        <h3>Section 4</h3>
+        <div>
+          <p>
+            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis
+            in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean
+            lacinia mauris vel est.
+          </p>
+          <p>
+            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat
+            lectus. Class aptent taciti sociosqu ad litora torquent per conubia
+            nostra, per inceptos himenaeos.
+          </p>
+        </div>
+      </div>
+
+      <hr />
+
+      <ul id="sortable1" class="connectedSortable">
+        <li class="ui-state-default">Item 1</li>
+        <li class="ui-state-default">Item 2</li>
+        <li class="ui-state-default">Item 3</li>
+        <li class="ui-state-default">Item 4</li>
+        <li class="ui-state-default">Item 5</li>
+      </ul>
+
+      <ul id="sortable2" class="connectedSortable">
+        <li class="ui-state-highlight">Item 1</li>
+        <li class="ui-state-highlight">Item 2</li>
+        <li class="ui-state-highlight">Item 3</li>
+        <li class="ui-state-highlight">Item 4</li>
+        <li class="ui-state-highlight">Item 5</li>
+      </ul>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <hr />
+      <form action="#">
+        <div class="mb-3">
+          <label for="tags" class="form-label">Tags:</label>
+          <input type="text" class="form-control" id="tags" />
+        </div>
+        <div class="mb-3">
+          <button type="submit" class="btn btn-dark">button</button>
+        </div>
+      </form>
+      <br />
+      <hr />
+      <br />
+
+      <p>Date: <input type="text" id="datepicker" /></p>
+      <br />
+      <hr />
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Nunc tincidunt</a></li>
+          <li><a href="#tabs-2">Proin dolor</a></li>
+          <li><a href="#tabs-3">Aenean lacinia</a></li>
+        </ul>
+        <div id="tabs-1">
+          <p>
+            Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus.
+            Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam
+            elementum quam ullamcorper ante. Etiam aliquet massa et lorem.
+            Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo.
+            Vivamus sed magna quis ligula eleifend adipiscing. Duis orci.
+            Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam
+            molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut
+            dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique
+            tempus lectus.
+          </p>
+        </div>
+        <div id="tabs-2">
+          <p>
+            Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida
+            ante, ut pharetra massa metus id nunc. Duis scelerisque molestie
+            turpis. Sed fringilla, massa eget luctus malesuada, metus eros
+            molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet
+            fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam.
+            Praesent in eros vestibulum mi adipiscing adipiscing. Morbi
+            facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut
+            posuere viverra nulla. Aliquam erat volutpat. Pellentesque
+            convallis. Maecenas feugiat, tellus pellentesque pretium posuere,
+            felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris
+            consectetur tortor et purus.
+          </p>
+        </div>
+        <div id="tabs-3">
+          <p>
+            Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti.
+            Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat,
+            eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent
+            taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+            himenaeos. Fusce sodales. Quisque eu urna vel enim commodo
+            pellentesque. Praesent eu risus hendrerit ligula tempus pretium.
+            Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.
+          </p>
+          <p>
+            Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper
+            at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo
+            vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti.
+            Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros,
+            id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero
+            sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat
+            porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu
+            tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit.
+            Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.
+          </p>
+        </div>
+   
+      <br />
+      <hr />
+      <p>
+        <a href="#" title="That's what this widget is">Tooltips</a> can be
+        attached to any element. When you hover the element with your mouse, the
+        title attribute is displayed in a little box next to the element, just
+        like a native tooltip.
+      </p>
+      <p>
+        But as it&apos;s not a native tooltip, it can be styled. Any themes
+        built with
+        <a
+          href="http://jqueryui.com/themeroller/"
+          title="ThemeRoller: jQuery UI's theme builder application"
+          >ThemeRoller</a
+        >
+        will also style tooltips accordingly.
+      </p>
+      <p>
+        Tooltips are also useful for form elements, to show some additional
+        information in the context of each field.
+      </p>
+      <p>
+        <label for="age">Your age:</label
+        ><input
+          id="age"
+          title="We ask for your age only for statistical purposes."
+        />
+      </p>
+      <p>Hover the field to see the tooltip.</p>
+    </div>
+    <br>
+    <hr>
+    <div class="toggler">
+      <div id="effect1" class="ui-corner-all">
+          Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede.
+      </div>
+    </div>
+     
+    <button id="button1" class="ui-state-default ui-corner-all">Run Effect</button>
+    <br><hr>
+     
+<div class="toggler">
+  <div id="effect" class="ui-widget-content ui-corner-all">
+    <h3 class="ui-widget-header ui-corner-all">Animate</h3>
+    <p>
+      Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
+    </p>
+  </div>
+  </div>
+  <br><hr>
+
+  <div class="toggler">
+    <div id="effect2" class="newClass ui-corner-all">
+        Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede.
+    </div>
+  </div>
+<button id="button2" class="ui-state-default ui-corner-all">Run Effect</button>
+<br><hr>
+<ul id="menu">
+  <li>
+    <div><span class="ui-icon ui-icon-disk"></span>Save</div>
+  </li>
+  <li>
+    <div><span class="ui-icon ui-icon-zoomin"></span>Zoom In</div>
+  </li>
+  <li>
+    <div><span class="ui-icon ui-icon-zoomout"></span>Zoom Out</div>
+  </li>
+  <li class="ui-state-disabled">
+    <div><span class="ui-icon ui-icon-print"></span>Print...</div>
+  </li>
+  <li>
+    <div>Playback</div>
+    <ul>
+      <li>
+        <div><span class="ui-icon ui-icon-seek-start"></span>Prev</div>
+      </li>
+      <li>
+        <div><span class="ui-icon ui-icon-stop"></span>Stop</div>
+      </li>
+      <li>
+        <div><span class="ui-icon ui-icon-play"></span>Play</div>
+      </li>
+      <li>
+        <div><span class="ui-icon ui-icon-seek-end"></span>Next</div>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <div>Learn more about this menu</div>
+  </li>
+</ul>
+<br><hr>
+<div id="progressbar"><div class="progress-label">Loading...</div></div> 
+<br> <hr>
+<div class="demo">
+ 
+  <form action="#">
+   
+    <div id="circle"></div>
+   
+    <fieldset>
+      <label for="radius">Circle radius</label>
+      <select name="radius" id="radius">
+        <option value="50">50px</option>
+        <option value="100">100px</option>
+        <option value="150" selected="selected">150px</option>
+        <option value="200">200px</option>
+        <option value="250">250px</option>
+      </select>
+   
+      <label for="color">Circle color</label>
+      <select name="color" id="color">
+        <option value="black">Black</option>
+        <option value="red">Red</option>
+        <option value="yellow" selected="selected">Yellow</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+    </fieldset>
+   
+  </form>
+   
+  </div> 
+<br><hr>
+ 
+<p>
+  <label for="amount">Minimum number of bedrooms:</label>
+  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+</p>
+<div id="slider-range-max"></div>
+ <br><hr>
+ <p>
+  <label for="spinner">Amount to donate:</label>
+  <input id="spinner" name="spinner" value="5">
+</p>
+ 
+<p>
+  <label for="currency">Currency to donate</label>
+  <select id="currency" name="currency">
+    <option value="en-US">US $</option>
+    <option value="de-DE">EUR &#x20AC;</option>
+    <option value="ja-JP">YEN &#xA5;</option>
+  </select>
+</p>
+ <br><hr>
+ <div id="dialog-message" title="Homwork complete">
+  <p>
+    <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
+    welcome to see my homework
+  </p>
+  <p>
+    click in the cross or ok button kindlyn<b>  thank you so much</b>.
+  </p>
+</div>
+ 
+<br><hr>
+<div id="parent">
+  <p>
+  This is the position parent element.
+  </p>
+</div>
+ 
+<div class="positionable" id="positionable1">
+  <p>
+  to position
+  </p>
+</div>
+ 
+<div class="positionable" id="positionable2">
+  <p>
+  to position 2
+  </p>
+</div>
+ 
+<div style="padding: 20px; margin-top: 75px;">
+  position...
+  <div style="padding-bottom: 20px;">
+    <b>my:</b>
+    <select id="my_horizontal">
+      <option value="left">left</option>
+      <option value="center">center</option>
+      <option value="right">right</option>
+    </select>
+    <select id="my_vertical">
+      <option value="top">top</option>
+      <option value="center">center</option>
+      <option value="bottom">bottom</option>
+    </select>
+  </div>
+  <div style="padding-bottom: 20px;">
+    <b>at:</b>
+    <select id="at_horizontal">
+      <option value="left">left</option>
+      <option value="center">center</option>
+      <option value="right">right</option>
+    </select>
+    <select id="at_vertical">
+      <option value="top">top</option>
+      <option value="center">center</option>
+      <option value="bottom">bottom</option>
+    </select>
+  </div>
+  <div style="padding-bottom: 20px;">
+    <b>collision:</b>
+    <select id="collision_horizontal">
+      <option value="flip">flip</option>
+      <option value="fit">fit</option>
+      <option value="flipfit">flipfit</option>
+      <option value="none">none</option>
+    </select>
+    <select id="collision_vertical">
+      <option value="flip">flip</option>
+      <option value="fit">fit</option>
+      <option value="flipfit">flipfit</option>
+      <option value="none">none</option>
+    </select>
+  </div>
+</div>
+
+
+
+</div>
+ 
+
+    <!--java script -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--java script -->
+  </body>
+</html>
